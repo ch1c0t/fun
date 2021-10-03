@@ -1,0 +1,24 @@
+{
+  "name": "@ch1c0t/fun",
+  "main": "./lib/main.js",
+  "exports": {
+    "require": "./lib/main.js",
+    "import": "./lib/esm.mjs"
+  },
+  "version": "0.0.0",
+  "author": "Anatoly Chernov <chertoly@gmail.com>",
+  "description": "A function to create functions that create functions",
+  "license": "0BSD",
+  "keywords": [
+    "coffeescript"
+  ],
+  "scripts": {
+    "build": "coffeelib build",
+    "start": "coffeelib watch",
+    "test": "jasmine"
+  },
+  "devDependencies": {
+    "coffeelib": "^0.0.4",
+    "jasmine": "^3.9.0"
+  }
+}
