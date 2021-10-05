@@ -3,7 +3,9 @@ exports.fun = ({ init, once, call, state }) ->
     state ?= {}
 
     for key, fn of init
-      state[key] = fn.call input[key]
+      value = input[key] if input
+      context = { value }
+      state[key] = fn.call context
 
     if once
       once.call state

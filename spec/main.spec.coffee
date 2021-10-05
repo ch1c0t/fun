@@ -4,7 +4,7 @@ describe 'main', ->
   it 'works', ->
     Some = fun
       init:
-        name: -> @
+        name: -> @value
       call: (surname) ->
         "Hello, #{@name} #{surname}."
 
@@ -16,8 +16,8 @@ describe 'main', ->
   it 'works when no arguments were passed', ->
     Server = fun
       init:
-        path: -> @ or "some/path"
-        port: -> @ or 8080
+        path: -> @value or "some/path"
+        port: -> @value or 8080
       call: ->
         "#{@path} #{@port}"
 
