@@ -30,3 +30,23 @@ describe 'once', ->
     string = server()
 
     expect(string).toBe 8081
+
+  it 'allows to wait for Promises', ->
+    sleep = (ms) ->
+      new Promise (resolve) ->
+        setTimeout resolve, ms
+
+    Server = fun
+      init:
+        path: -> @value or 'some/path'
+        port: -> @value or 8080
+      once: ->
+        await sleep 200
+        'from a Promise'
+      call: ->
+        await @once
+
+    server = Server()
+    string = await server()
+
+    expect(string).toBe 'from a Promise'
