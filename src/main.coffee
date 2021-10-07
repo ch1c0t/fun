@@ -8,6 +8,6 @@ exports.fun = ({ init, once, call, state }) ->
       state[key] = fn.call context
 
     if once
-      once.call state
+      state.once = once.call state
 
     call.bind state
