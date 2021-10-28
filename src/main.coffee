@@ -1,6 +1,6 @@
-exports.fun = ({ init, once, call, state }) ->
+exports.fun = ({ init, once, call }) ->
   (input) ->
-    state ?= {}
+    state = {}
 
     for key, fn of init
       value = input[key] if input
