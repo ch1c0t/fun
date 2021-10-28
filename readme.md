@@ -46,7 +46,7 @@ If nothing was passed, it is `undefined`.
 
 ### `call`
 
-is the Function that will be [binded][bind] to the internal state and
+is the Function that will be [bound][bind] to the internal state and
 returned from a functor.
 
 [bind]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind

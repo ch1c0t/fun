@@ -5,7 +5,7 @@
     "require": "./lib/main.js",
     "import": "./lib/esm.mjs"
   },
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "Anatoly Chernov <chertoly@gmail.com>",
   "description": "A function to create functions that create functions",
   "license": "0BSD",
