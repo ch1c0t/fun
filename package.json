@@ -5,10 +5,14 @@
     "require": "./lib/main.js",
     "import": "./lib/esm.mjs"
   },
-  "version": "0.1.1",
+  "version": "0.2.0",
   "author": "Anatoly Chernov <chertoly@gmail.com>",
   "description": "A function to create functions that create functions",
   "license": "0BSD",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ch1c0t/fun"
+  },
   "keywords": [
     "coffeescript"
   ],

@@ -2,11 +2,9 @@
 
 To install: `npm i @ch1c0t/fun`.
 
-`fun` is a function to create functors.
+`fun` is a function to create functors. A functor is a function that creates functions.
 
-A functor is a function that creates functions.
-
-It takes one argument, [an Object `spec`](#spec) which is a functor specification.
+`fun` takes one argument, [an Object `spec`](#spec) which is a functor specification.
 It expects that the `spec` will have the following properties:
 
 - required:
