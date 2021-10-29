@@ -38,10 +38,12 @@ string
 is an Object that specifies how a functor processes its argument.
 
 Each own property of `init` must be associated with a function that returns a value.
-When a functor gets called, it executes these functions to obtain values
-for the internal state of the function that it returns.
+These are initial functions.
 
-Inside of these functions, `@value` refers to what was passed in the argument.
+When a functor gets called, it executes its initial functions to obtain values
+for the internal state of [the function that it returns](#call).
+
+Inside of initial functions, `@value` refers to what was passed in the argument.
 If nothing was passed, it is `undefined`.
 
 ### `call`
