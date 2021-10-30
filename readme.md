@@ -16,7 +16,10 @@ It expects that the `spec` will have the following properties:
 A usage example:
 
 ```coffee
+# Either require
 { fun } = require '@ch1c0t/fun'
+# or import
+import { fun } from '@ch1c0t/fun'
 
 Server = fun
   init:
@@ -83,8 +86,7 @@ string
 #=> 'from a Promise: default/path 8080'
 ```
 
-# Cautionary remarks
+# `global.fun`
 
 `fun` is such a fundamental concept that sometimes I want to have
-`global.fun = fun` when I create applications.
-I don't do `global.fun` when I create some libraries, however.
+`global.fun = fun`.
