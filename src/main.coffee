@@ -2,7 +2,7 @@ exports.fun = ({ init, once, call }) ->
   (input) ->
     state = {}
 
-    for key, fn of init
+    for own key, fn of init
       value = input[key] if input
       context = { value }
       state[key] = fn.call context

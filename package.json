@@ -22,6 +22,7 @@
     "test": "jasmine"
   },
   "devDependencies": {
+    "@ch1c0t/ext": "^0.0.8",
     "coffeelib": "^0.0.4",
     "jasmine": "^3.9.0"
   }
